@@ -296,11 +296,12 @@ function closebox(ev) {
 }
 
 function playSound(filename) {
-	try{
+	try {
 		var index = ['intro','select','match','applause'].indexOf(filename);
 		var sound = document.querySelectorAll('audio.sound')[index];
 		sound.play();
-	}catch(err){}
+	} catch (err) {
+	}
 }
 
 function toggleFullscreen() {
